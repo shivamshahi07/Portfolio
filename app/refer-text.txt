@@ -14,4 +14,17 @@ navbar:
             <BiLogoTwitter className="text-2xl hover:decoration-white" />
           </Link>
 
+
+
+          {/* <Button
+            className="hidden group md:flex"
+            variant={"outline"}
+            size={"sm"}
+            asChild
+          >
+            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              Resume
+              <HiDownload className="opacity-60 group-hover:translate-y-[0.15rem] transition" />
+            </a>
+          </Button> */}
  

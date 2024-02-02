@@ -27,10 +27,7 @@ export default function Home() {
     },
   ];
   return (
-    <main>
-      <div> </div>
-      <Image src="" alt="" />
-
+    <main className="md:max-w-screen-xl mx-auto px-4">
       <TypewriterEffectSmooth words={words} />
     </main>
   );
