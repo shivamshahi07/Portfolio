@@ -1,0 +1,17 @@
+navbar:
+ left side 
+    home
+    projects 
+    about me 
+    contact me 
+ right side : 
+    instagram button 
+    github 
+    linkedin 
+
+
+    <Link href={"https://twitter.com/Shivamshahi77"}>
+            <BiLogoTwitter className="text-2xl hover:decoration-white" />
+          </Link>
+
+ 
