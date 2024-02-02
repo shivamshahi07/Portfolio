@@ -13,7 +13,7 @@ import {
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
 import { navItems } from "./nav-items";
-import { SocialItems } from "../ui/dropdown/social-items";
+import { SocialItems } from "../../ui/dropdown/social-items";
 import { link } from "fs";
 
 export function NavigationMenu() {

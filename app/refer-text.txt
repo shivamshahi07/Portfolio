@@ -27,4 +27,12 @@ navbar:
               <HiDownload className="opacity-60 group-hover:translate-y-[0.15rem] transition" />
             </a>
           </Button> */}
+
+update at 2 feb , 10:30pm :
+resume button needs some work in context to its position 
+components that need to be made now :
+   about-me
+   projects
+   experience
+   contact form 
  

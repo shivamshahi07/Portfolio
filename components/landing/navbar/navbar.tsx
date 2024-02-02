@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ModeToggle } from "../ui/theme-toggler";
+import { ModeToggle } from "../../ui/theme-toggler";
 import { HiDownload } from "react-icons/hi";
 import { navItems } from "./nav-items";
-import SocialsDropdown from "../ui/dropdown/socials-dropdown";
+import SocialsDropdown from "../../ui/dropdown/socials-dropdown";
 import {
   Drawer,
   DrawerClose,

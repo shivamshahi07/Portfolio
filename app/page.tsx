@@ -1,3 +1,6 @@
+import AboutMe from "@/components/landing/about-me/About-me";
+import LandingPage from "@/components/landing/landing-page";
+import Projects from "@/components/landing/projects/projects";
 import { SocialItems } from "@/components/ui/dropdown/social-items";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import {
@@ -28,7 +31,8 @@ export default function Home() {
   ];
   return (
     <main className="md:max-w-screen-xl mx-auto px-4">
-      <TypewriterEffectSmooth words={words} />
+      <LandingPage/>
+      
     </main>
   );
 }
