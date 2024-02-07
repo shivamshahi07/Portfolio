@@ -29,10 +29,15 @@ navbar:
           </Button> */}
 
 update at 2 feb , 10:30pm :
+
+title:Shivam Shahi•Full Stack Developer
+description:Explore the digital world created by Shivam, a seasoned full-stack web developer. Specializing in both front-end and back-end technologies, I bring ideas to life with a perfect blend of creativity and technical expertise
+
 resume button needs some work in context to its position 
 components that need to be made now :
    about-me
    projects
    experience
    contact form 
+the portfolio also needs a go back to top button 
  

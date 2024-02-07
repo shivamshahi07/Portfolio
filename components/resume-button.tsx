@@ -4,16 +4,16 @@ import { Button } from "./ui/button";
 const ResumeButton = () => {
   return (
     <main className="">
-      <div className="flex w-1/2" >
+      <div className="">
         <Button
-          className=" group "
-          variant={"outline"}
-          size={"sm"}
+          className="group rounded-full hover:scale-110 transition-all bg-gradient-to-r from-blue-600 to-indigo-600 text-neutral-100"
+          variant={"default"}
+          size={"lg"}
           asChild
         >
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
-            <HiDownload className="opacity-60 group-hover:translate-y-[0.15rem] transition" />
+            <HiDownload className="ml-1 opacity-60 group-hover:translate-y-[0.15rem] transition" />
           </a>
         </Button>
       </div>
