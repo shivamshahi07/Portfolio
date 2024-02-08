@@ -1,9 +1,9 @@
-import { cn } from "@/lib/utils";
-import { MotionConfig } from "framer-motion";
-import Image from "next/image";
+// import { cn } from "@/lib/utils";
+// import { MotionConfig } from "framer-motion";
+// import Image from "next/image";
 import Link from "next/link";
-import img from "@/public/images/shivam.jpg";
-import { TracingBeam } from "@/components/ui/tracing-beam";
+
+// import { TracingBeam } from "@/components/ui/tracing-beam";
 import Shivam from "../shivam_avatar";
 
 const AboutMe = () => {

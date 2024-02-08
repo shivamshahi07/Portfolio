@@ -1,7 +1,6 @@
 import first from "@/public/images/first-pr.png";
 import Image from "next/image";
 import Link from "next/link";
-import ShivamAvatar from "@/components/landing/experience/bounty-pr";
 import BountyAvatar from "@/components/landing/experience/bounty-pr";
 const Exp = () => {
   return (

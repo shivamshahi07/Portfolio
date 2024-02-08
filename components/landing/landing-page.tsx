@@ -1,16 +1,16 @@
 "use client";
 import ResumeButton from "../resume-button";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-import { TypewriterEffect } from "../ui/typewriter-effect";
+// import { TypewriterEffect } from "../ui/typewriter-effect";
 import { motion } from "framer-motion";
 import { Roboto } from "next/font/google";
-import AboutMe from "./about-me/about-me";
 import ContactMe from "./contact-me/contact-me";
 import Exp from "./experience/experience";
 import Projects from "./projects/projects";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Background } from "../ui/bg";
+import AboutMe from "./about-me/about-me";
 const poppins = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],

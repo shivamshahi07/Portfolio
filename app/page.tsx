@@ -1,14 +1,14 @@
-import AboutMe from "@/components/landing/about-me/about-me";
+// import AboutMe from "@/components/landing/about-me/about-me";
 import LandingPage from "@/components/landing/landing-page";
-import Projects from "@/components/landing/projects/projects";
-import { SocialItems } from "@/components/ui/dropdown/social-items";
-import { TracingBeam } from "@/components/ui/tracing-beam";
-import {
-  TypewriterEffect,
-  TypewriterEffectSmooth,
-} from "@/components/ui/typewriter-effect";
-import Image from "next/image";
-import { LiaFileWordSolid } from "react-icons/lia";
+// import Projects from "@/components/landing/projects/projects";
+// import { SocialItems } from "@/components/ui/dropdown/social-items";
+// import { TracingBeam } from "@/components/ui/tracing-beam";
+// import {
+//   TypewriterEffect,
+//   TypewriterEffectSmooth,
+// } from "@/components/ui/typewriter-effect";
+// import Image from "next/image";
+// import { LiaFileWordSolid } from "react-icons/lia";
 
 export default function Home() {
   const words = [
