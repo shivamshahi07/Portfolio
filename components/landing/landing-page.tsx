@@ -58,7 +58,7 @@ const LandingPage = () => {
       </p> */}
       <motion.p
         className={cn(
-          "text-lg text-neutral-400 md:max-w-screen-md mb-3 md:mb-6",
+          "text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-3 md:mb-6",
           poppins.className
         )}
         initial={{ opacity: 0 }}
@@ -66,7 +66,7 @@ const LandingPage = () => {
         transition={{ ease: "easeOut", duration: 2 }}
       >
         Hey, I&apos;m{" "}
-        <span className="text-neutral-800 dark:text-neutral-200 font-medium">
+        <span className="text-neutral-800 dark:text-neutral-300 font-medium">
           Shivam Shahi
         </span>{" "}
         (
@@ -82,7 +82,7 @@ const LandingPage = () => {
       </motion.p>
       <motion.p
         className={cn(
-          "text-lg text-neutral-400 md:max-w-screen-md mb-8 md:mb-16",
+          "text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-16",
           poppins.className
         )}
         initial={{ opacity: 0 }}
