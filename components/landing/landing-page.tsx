@@ -40,7 +40,7 @@ const LandingPage = () => {
       <Background />
       <div className="">
         <h1 className="text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
-          👋🏼 Hey, I'm{" "}
+          👋🏼 Hey, I&#39;m{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
             Shivam!
           </span>
@@ -89,7 +89,7 @@ const LandingPage = () => {
         animate={{ opacity: 1 }}
         transition={{ ease: "easeOut", duration: 2 }}
       >
-        I&apos;m currently an undergraduate, pursuing Computer Science majors
+        I&#39;m currently an undergraduate, pursuing Computer Science majors
         with Specialization in Artificial Intelligence and Machine Learning from
         New Delhi, India.
       </motion.p>

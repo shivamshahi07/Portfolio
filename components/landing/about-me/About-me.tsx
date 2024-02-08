@@ -27,12 +27,12 @@ const AboutMe = () => {
             seamless user experience.
           </p>
           <p className="text-lg  text-slate-600 dark:text-neutral-400 md:max-w-screen-md mb-8 md:mb-4">
-            I thrive on innovation and creative problem-solving. Whether it's
+            I thrive on innovation and creative problem-solving. Whether it&#39;s
             building from scratch or optimizing existing systems, I bring a
             fresh perspective to every project
           </p>
           <p className="text-lg text-slate-600 dark:text-neutral-400 md:max-w-screen-md mb-8 md:mb-4">
-            Beyond coding, you'll find me listening to{" "}
+            Beyond coding, you&rsquo;ll find me listening to{" "}
             <Link
               href={"https://open.spotify.com/user/b4p96ia2c1r8gjil2h2rqo7wi"}
               className="text-green-400 underline-offset-1"

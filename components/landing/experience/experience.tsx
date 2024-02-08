@@ -12,7 +12,7 @@ const Exp = () => {
       <div>
         <div>
           <p>
-            My journey has been nothing short of an adventure. Here's a glimpse
+            My journey has been nothing short of an adventure. Here&#39;s a glimpse
             of my development journey:
           </p>
 

@@ -32,7 +32,7 @@ export function NavigationMenu() {
       <DrawerContent>
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader className="w-full flex flex-col items-center text-center">
-            <DrawerTitle>Shivam's Portfolio Website</DrawerTitle>
+            <DrawerTitle>Shivam&#39;s Portfolio Website</DrawerTitle>
             <DrawerDescription>Choose an Option</DrawerDescription>
           </DrawerHeader>
 
