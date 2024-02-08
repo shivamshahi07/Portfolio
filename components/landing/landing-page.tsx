@@ -4,7 +4,7 @@ import { TextGenerateEffect } from "../ui/text-generate-effect";
 import { TypewriterEffect } from "../ui/typewriter-effect";
 import { motion } from "framer-motion";
 import { Roboto } from "next/font/google";
-import AboutMe from "./about-me/About-me";
+import AboutMe from "./about-me/about-me";
 import ContactMe from "./contact-me/contact-me";
 import Exp from "./experience/experience";
 import Projects from "./projects/projects";

@@ -1,4 +1,4 @@
-import AboutMe from "@/components/landing/about-me/About-me";
+import AboutMe from "@/components/landing/about-me/about-me";
 import LandingPage from "@/components/landing/landing-page";
 import Projects from "@/components/landing/projects/projects";
 import { SocialItems } from "@/components/ui/dropdown/social-items";

@@ -1,24 +1,22 @@
 import first from "@/public/images/first-pr.png";
-import bounty from "@/public/images/bounty-pr.png";
 import Image from "next/image";
 import Link from "next/link";
+import ShivamAvatar from "@/components/landing/experience/bounty-pr";
+import BountyAvatar from "@/components/landing/experience/bounty-pr";
 const Exp = () => {
   return (
-    <main
-      className=""
-      id="exp"
-    >
+    <main className="" id="exp">
       <h2 className=" text-teal-500 dark:text-teal-700 w-full flex flex-col gap-y-2 items-center justify-center px-4 md:px-36 lg:px-48 mt-12 scroll-mt-20 text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
         My Journey
       </h2>
-      <div >
+      <div>
         <div>
           <p>
             My journey has been nothing short of an adventure. Here's a glimpse
             of my development journey:
           </p>
 
-          <h1 className="text-3xl text-blue-600 dark:text-indigo-500 mt-12">
+          <h1 className="text-3xl text-blue-600 dark:text-indigo-500 mt-12 mb-12 ">
             Embracing the Open Source Community (Year 2023 - Present)
           </h1>
 
@@ -56,7 +54,7 @@ const Exp = () => {
                   width={360}
                   height={300}
                   alt="first PR"
-                  className="rounded-lg hover:scale-150 transition-all duration-400 shadow-lg"
+                  className="rounded-lg hover:scale-110 transition-all duration-300 shadow-lg"
                 />
               </span>
             </li>
@@ -70,14 +68,20 @@ const Exp = () => {
                 it was the just the push i needed to know that i chose the right
                 path. it could not have come at a better time .
               </li>
-              <Image
+
+              <BountyAvatar onDesktop={true} />
+
+              {/* <Image
                 src={bounty}
                 width={500}
                 height={360}
                 alt="Bounty PR"
                 className="flex-grow rounded-xl hover:scale-125 transition-all duration-400 shadow-lg  "
-              />
+              /> */}
             </div>
+          </div>
+          <div className="mt-12">
+            <BountyAvatar onDesktop={false} />
           </div>
         </div>
       </div>
