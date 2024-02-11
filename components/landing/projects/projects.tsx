@@ -1,3 +1,8 @@
+import Image from "next/image";
+import Link from "next/link";
+import shlipkart from "@/public/images/shlipkart.png";
+import { GithubIcon } from "lucide-react";
+
 const Projects = () => {
   return (
     <main
@@ -10,24 +15,34 @@ const Projects = () => {
       >
         Projects🧑🏻‍💻
       </h1>
-      <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laborum
-        quibusdam, rem assumenda facere consequatur sed sit exercitationem ut,
-        quod ratione, blanditiis expedita sint incidunt consequuntur culpa magni
-        esse similique minus? Recusandae, amet molestias ea quam nemo architecto
-        adipisci ipsum non totam deleniti! Aperiam nobis facilis officiis nihil
-        quis maiores reiciendis! Aliquam corrupti temporibus modi soluta
-        blanditiis perspiciatis ut dolor tenetur. Ipsam suscipit nostrum ipsum
-        eaque obcaecati maxime velit neque magni impedit veniam. Earum sint
-        placeat, neque sapiente fugiat reiciendis dolore cum possimus. Aut
-        commodi nulla molestias quas perferendis quisquam error. Consequuntur
-        reiciendis, fugiat, explicabo fuga odio inventore alias distinctio
-        obcaecati quibusdam, recusandae nulla ratione? Ducimus omnis voluptas
-        obcaecati quae facilis neque, aut odio labore aliquam est, mollitia
-        doloribus voluptatem placeat. A quae voluptatum cumque placeat
-        architecto? Quae asperiores laborum sequi consequuntur accusamus
-        officiis? Itaque, est iure fugiat nihil esse cupiditate animi
-        laudantium, hic sit minima repudiandae consequatur, ipsum pariatur rem?
+      <div className="flex">
+        <div className="flex-grow">
+          <Image
+            src={shlipkart}
+            width={1500}
+            height={1500}
+            alt={"Shlipkart"}
+            className="rounded-xl hover:scale-125 transition-all duration-500 mr-28"
+          />
+        </div>
+        <div className="flex-grow">
+          <h1 className="text-red-500">Shlipkart</h1>
+          <h3>
+            An E-Commerce App built with google authentication where users can
+            add and remove items from their shopping carts{" "}
+          </h3>
+
+          <Link
+            href="https://shlipkart-shivam-shahis-projects.vercel.app/"
+            className="hover:text-blue-400"
+          >
+            🔗
+          </Link>
+
+          <Link href="https://github.com/shivamshahi07/Shlipkart">
+            Github Link
+          </Link>
+        </div>
       </div>
     </main>
   );
