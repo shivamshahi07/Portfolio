@@ -8,7 +8,7 @@ const Exp = () => {
       <h2 className=" text-teal-500 dark:text-teal-700 w-full flex flex-col gap-y-2 items-center justify-center px-4 md:px-36 lg:px-48 mt-12 scroll-mt-20 text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
         My Journey
       </h2>
-      <div>
+      <div className="text-neutral-800 dark:text-neutral-300">
         <div>
           <p>
             My journey has been nothing short of an adventure. Here&#39;s a glimpse

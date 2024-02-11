@@ -17,21 +17,21 @@ const AboutMe = () => {
       </h1>
       <div className="flex">
         <div className="flex-grow ">
-          <p className="text-lg text-slate-600 dark:text-neutral-400 md:max-w-screen-md mb-8 md:mb-4">
+          <p className="text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-4">
             Hi, my name is Shivam and I am a highly ambitious, self-motivated
             and driven Software Engineer .
           </p>
-          <p className="text-lg text-slate-600 dark:text-neutral-400 md:max-w-screen-md mb-8 md:mb-4">
+          <p className="text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-4">
             I am passionate about creating not just functional, but also
             aesthetically pleasing and intuitive user interfaces, ensuring a
             seamless user experience.
           </p>
-          <p className="text-lg  text-slate-600 dark:text-neutral-400 md:max-w-screen-md mb-8 md:mb-4">
+          <p className="text-lg  text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-4">
             I thrive on innovation and creative problem-solving. Whether it&#39;s
             building from scratch or optimizing existing systems, I bring a
             fresh perspective to every project
           </p>
-          <p className="text-lg text-slate-600 dark:text-neutral-400 md:max-w-screen-md mb-8 md:mb-4">
+          <p className="text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-4">
             Beyond coding, you&rsquo;ll find me listening to{" "}
             <Link
               href={"https://open.spotify.com/user/b4p96ia2c1r8gjil2h2rqo7wi"}
