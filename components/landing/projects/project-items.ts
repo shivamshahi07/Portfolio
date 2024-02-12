@@ -1,10 +1,9 @@
-import shlipkart from "public/images/shlipkart.png"
-
+import img from "@/public/images/shlipkart.png";
 export const projectitems = [
   {
     id: 1,
     name: "Shlipkart",
-    image: shlipkart,
+    image: img,
     description:
       "An E-Commerce App built with google authentication where users can add and remove items from their shopping carts ",
     demolink: "https://shlipkart-shivam-shahis-projects.vercel.app/",

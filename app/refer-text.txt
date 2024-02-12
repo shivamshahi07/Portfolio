@@ -39,5 +39,45 @@ components that need to be made now :
    projects
    experience
    contact form 
-the portfolio also needs a go back to top button 
- 
+the portfolio also needs a go back to top button
+
+{projectitems.map((item) => {
+          return(
+            <div></div>
+          
+
+          )
+
+        })} 
+
+
+<div className="flex-grow">
+          <Image
+            src={shlipkart}
+            width={800}
+            height={800}
+            alt={"Shlipkart"}
+            className="rounded-xl hover:scale-125 transition-all duration-500 mr-28"
+          />
+        </div>
+        <div className="flex-grow">
+          <h1 className="text-red-500">Shlipkart</h1>
+          <h3>
+            An E-Commerce App built with google authentication where users can
+            add and remove items from their shopping carts{" "}
+          </h3>
+
+          <Link
+            href="https://shlipkart-shivam-shahis-projects.vercel.app/"
+            className="hover:text-blue-400"
+          >
+            🔗
+          </Link>
+
+          <Link href="https://github.com/shivamshahi07/Shlipkart">
+            Github Link
+          </Link>
+        </div>
+      </div>
+  An E-Commerce App built with google authentication where users
+                  can add and remove items from their shopping carts{" "}
