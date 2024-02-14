@@ -6,7 +6,7 @@ const ResumeButton = () => {
     <main className="">
       <div className="">
         <Button
-          className="group rounded-full hover:scale-110 transition-all bg-gradient-to-r from-blue-600 to-indigo-600 text-neutral-100"
+          className="group rounded-full hover:scale-110 transition-all bg-gradient-to-r from-blue-600 to-indigo-600 text-neutral-100 mb-32 "
           variant={"default"}
           size={"lg"}
           asChild

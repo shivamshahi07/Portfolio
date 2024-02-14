@@ -11,6 +11,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Background } from "../ui/bg";
 import AboutMe from "./about-me/about-me";
+import { ChevronDown, ChevronsDown, LucideScroll, Scroll } from "lucide-react";
 const poppins = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
@@ -95,6 +96,8 @@ const LandingPage = () => {
       </motion.p>
 
       <ResumeButton />
+      {/* scroll down button */}
+      <ChevronsDown className="animate-bounce  w-full flex flex-col gap-y-2 items-center justify-center px-4 md:px-36 lg:px-48  scroll-mt-10 text-3xl md:text-4xl font-semibold mb-16 md:mb-4 " />
 
       {/* About me section  */}
       <AboutMe />

@@ -54,19 +54,19 @@ export function NavigationMenu() {
                 );
               })}
               <div>
-                {SocialItems.map((item) => {
+                {SocialItems.map((items) => {
                   return (
                     <Button
-                      key={item.id}
+                      key={items.id}
                       className=" hover:text-blue-500"
                       variant={"link"}
                     >
                       <Link
-                        href={item.source}
+                        href={items.source}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        {item.icon}
+                        {items.icon}
                       </Link>
                     </Button>
                   );

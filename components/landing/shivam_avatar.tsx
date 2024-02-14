@@ -8,7 +8,7 @@ const Shivam = ({ onDesktop = true }: { onDesktop?: boolean }) => {
     <motion.div
       className={cn(
         "w-full items-center justify-center col-span-2",
-        onDesktop ? "md:flex hidden" : "flex md:hidden mb-2 -mt-4"
+        onDesktop ? "md:flex hidden mt-10 " : "flex md:hidden mb-4 -mt-4"
       )}
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
