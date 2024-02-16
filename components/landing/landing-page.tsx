@@ -37,7 +37,7 @@ const LandingPage = () => {
     },
   ];
   return (
-    <main className="max-w-screen-xl px-8">
+    <main className="max-w-screen-xl px-8 ">
       <Background />
       <div className="">
         <h1 className="text-3xl md:text-4xl font-semibold mb-3 md:mb-4">

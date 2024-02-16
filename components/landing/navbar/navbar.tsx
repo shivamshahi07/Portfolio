@@ -19,7 +19,7 @@ export const Navbar = () => {
                 size={"sm"}
                 asChild
               >
-                <Link href={item.source}>{item.name}</Link>
+                <Link href={item.source} >{item.name}</Link>
               </Button>
             );
           })}
