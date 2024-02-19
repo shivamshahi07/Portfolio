@@ -15,7 +15,8 @@ const Projects = () => {
 
       {projectitems.map((item) => {
         return (
-          <div className="flex">
+          <div className="flex" key={item.id} >
+            
             <div className="flex-grow space-y-10 mb-8  ">
               <Image
                 src={shlipkart}

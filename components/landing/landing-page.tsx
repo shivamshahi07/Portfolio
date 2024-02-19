@@ -1,7 +1,6 @@
 "use client";
 import ResumeButton from "../resume-button";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
-// import { TypewriterEffect } from "../ui/typewriter-effect";
 import { motion } from "framer-motion";
 import { Roboto } from "next/font/google";
 import ContactMe from "./contact-me/contact-me";
@@ -40,7 +39,7 @@ const LandingPage = () => {
     <main className="max-w-screen-xl px-8 ">
       <Background />
       <div className="">
-        <h1 className="text-3xl md:text-4xl font-semibold mb-3 md:mb-4">
+        <h1 className="text-3xl md:text-4xl font-semibold mb-3 md:mb-4" >
           👋🏼 Hey, I&#39;m{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
             Shivam!
