@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Background } from "../ui/bg";
 import AboutMe from "./about-me/about-me";
-import { ChevronDown, ChevronsDown, LucideScroll, Scroll } from "lucide-react";
+import { ChevronsDown } from "lucide-react";
 const poppins = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
