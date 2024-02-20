@@ -33,12 +33,12 @@ export function NavigationMenu() {
         <div className="mx-auto w-full max-w-sm">
           <DrawerHeader className="w-full flex flex-col items-center text-center">
             <DrawerTitle>Shivam&#39;s Portfolio Website</DrawerTitle>
-            <DrawerDescription>Choose an Option</DrawerDescription>
+            <DrawerDescription className="mt-8 ">My Socials:</DrawerDescription>
           </DrawerHeader>
 
           <div className="p-4 pb-16">
             <div className="flex flex-col items-center justify-center space-y-2 text-lg">
-              {navItems.map((item) => {
+              {/* {navItems.map((item) => {
                 return (
                   <Button
                     key={item.id}
@@ -52,7 +52,7 @@ export function NavigationMenu() {
                     </DrawerClose>
                   </Button>
                 );
-              })}
+              })} */}
               <div>
                 {SocialItems.map((items) => {
                   return (
