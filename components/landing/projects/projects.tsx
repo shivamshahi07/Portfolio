@@ -17,7 +17,7 @@ const Projects = () => {
       {projectitems.map((item) => {
         return (
           <div className="md:flex flex-row" key={item.id} >
-            <div className="md:flex-grow space-y-10 mb-8 mt-8">
+            <div className="md:flex-grow space-y-10 mb-8 mt-8 ml-4">
               <Image
                 src={shlipkart}
                 width={400}
