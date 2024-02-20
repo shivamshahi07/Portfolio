@@ -26,7 +26,7 @@ const Projects = () => {
                 className="rounded-xl hover:scale-125 transition-all duration-500 mr-28 space-y-10 gap-10  "
               />
             </div>
-            <div className="md:flex-grow items-center justify-center mt-8 ml-2 ">
+            <div className="md:flex-grow items-center justify-center mt-8 ml-4 ">
               <h1 className="text-purple-600 font-semibold items-center ml-7 text-3xl ">
               {item.name}
             </h1>
