@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { projectitems } from "./project-items";
 import shlipkart from "@/public/images/shlipkart.png";
+import { ArrowUpRightSquare, GithubIcon } from "lucide-react";
 
 const Projects = () => {
   return (
@@ -15,21 +16,20 @@ const Projects = () => {
 
       {projectitems.map((item) => {
         return (
-          <div className="flex" key={item.id} >
-            
-            <div className="flex-grow space-y-10 mb-8  ">
+          <div className="md:flex flex-row" key={item.id} >
+            <div className="md:flex-grow space-y-10 mb-8 mt-8">
               <Image
                 src={shlipkart}
                 width={400}
                 height={400}
                 alt={item.name}
-                className="rounded-xl hover:scale-125 transition-all duration-500 mr-28 space-y-10 gap-10"
+                className="rounded-xl hover:scale-125 transition-all duration-500 mr-28 space-y-10 gap-10  "
               />
             </div>
-            <div className="flex-grow items-center justify-center">
+            <div className="md:flex-grow items-center justify-center mt-8 ml-8 ">
               <h1 className="text-purple-600 font-semibold items-center ml-7">
-                {item.name}
-              </h1>
+              {item.name}
+            </h1>
               <h3 className="ml-7">{item.description}</h3>
               <div className="ml-7">
                 <div className="flex items-center">
@@ -37,7 +37,10 @@ const Projects = () => {
                     href={item.demolink}
                     className="hover:text-blue-400 hover:underline"
                   >
-                    Demo Link🔗
+                    <div className="flex items-center justify-center gap-2">
+
+                    Demo Link<ArrowUpRightSquare/>
+                    </div>
                   </Link>
                 </div>
                 <div>
@@ -45,10 +48,14 @@ const Projects = () => {
                     href={item.github}
                     className="hover:text-green-400 hover:underline"
                   >
-                    Github Link
+                    <div className="flex gap-2 ">
+
+                    Github Link<GithubIcon/>
+                    </div>
                   </Link>
                 </div>
               </div>
+              <hr className="block md:hidden mt-3 " />
             </div>
           </div>
         );
