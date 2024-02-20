@@ -31,8 +31,8 @@ const Projects = () => {
               {item.name}
             </h1>
               <h3 className="ml-7">{item.description}</h3>
-              <div className="ml-7">
-                <div className="flex items-center">
+              <div className="ml-7 ">
+                <div className="flex items-center mb-1 mt-1 ">
                   <Link
                     href={item.demolink}
                     className="hover:text-blue-400 hover:underline"
