@@ -16,7 +16,7 @@ const Shivam = ({ onDesktop = true }: { onDesktop?: boolean }) => {
     >
       <Image
         src={img}
-        alt={"Bounty pr"}
+        alt={"YEP,THAT'S ME"}
         className="rounded-full shadow-xl hover:scale-125  transition-all duration-300"
         width={onDesktop ? 360 : 240}
         height={onDesktop ? 360 : 240}
