@@ -30,7 +30,7 @@ export default function Home() {
     },
   ];
   return (
-    <main className="md:max-w-screen-xl mx-auto px-4">
+    <main className="md:max-w-screen-xl mx-auto px-4 scroll-mt-44 ">
       <LandingPage/>
       
     </main>
