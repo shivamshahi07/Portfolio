@@ -7,7 +7,7 @@ const BountyAvatar = ({ onDesktop = true }: { onDesktop?: boolean }) => {
   return (
     <motion.div
       className={cn(
-        "w-full items-center justify-center col-span-2",
+        "w-full items-center justify-center col-span-2 ",
         onDesktop ? "md:flex hidden" : "flex md:hidden mb-2 -mt-4"
       )}
       initial={{ opacity: 0 }}
