@@ -26,9 +26,9 @@ const SocialsDropdown = () => {
           <Button
             variant="link"
             size="default"
-            className="hover:no-underline hover:text-blue-500"
+            className="hover:no-underline hover:text-blue-500 group"
           >
-            Socials <ChevronDown className="h-4 w-4 ml-1" />
+            Socials <ChevronDown className="h-4 w-4 ml-1 group-hover:translate-y-[0.15rem] transition" />
           </Button>
         </DropdownMenuTrigger>
         {/* //mapping starts from here  */}
