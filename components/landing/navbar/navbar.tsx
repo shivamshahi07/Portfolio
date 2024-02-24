@@ -4,6 +4,8 @@ import { ModeToggle } from "../../ui/theme-toggler";
 import { navItems } from "./nav-items";
 import SocialsDropdown from "../../ui/dropdown/socials-dropdown";
 import { NavigationMenu } from "./nav-menu";
+import ContactMe from "../contact-me/contact-me";
+import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 export const Navbar = () => {
   return (
@@ -27,13 +29,7 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-between sm:justify-normal w-full sm:w-auto space-x-4">
-          <Button
-            className="bg-gradient-to-r from-blue-600 to-indigo-800 text-neutral-100 font-semibold"
-            size={"sm"}
-            asChild
-          >
-            <Link href={""}>Contact Me</Link>
-          </Button>
+          <ContactMe/>
 
           <div className="flex items-center space-x-2">
             <ModeToggle />

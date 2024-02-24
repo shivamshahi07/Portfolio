@@ -109,7 +109,7 @@ const LandingPage = () => {
       <Exp />
 
       {/* Contact Me Section */}
-      <ContactMe />
+     
     </main>
   );
 };
