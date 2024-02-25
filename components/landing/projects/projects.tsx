@@ -16,43 +16,45 @@ const Projects = () => {
 
       {projectitems.map((item) => {
         return (
-          <div className="md:flex flex-row" key={item.id} >
-            <div className="md:flex-grow space-y-10 mb-8 mt-8 ml-4 w-full">
-              <Image
-                src={item.image}
-                width={500}
-                height={500}
-                alt={item.name}
-                className="rounded-xl hover:scale-125 transition-all duration-500 mr-28 space-y-10 gap-10  "
-              />
-            </div>
-            <div className="md:flex-grow items-center justify-center mt-8 ml-4 w-full  ">
-              <h1 className="text-purple-600 font-semibold items-center ml-7 text-3xl ">
-              {item.name}
-            </h1>
-              <h3 className="ml-7">{item.description}</h3>
-              <div className="ml-7 ">
-                <div className="flex items-center mb-1 mt-1 ">
-                  <Link
-                    href={item.demolink}
-                    className="hover:text-blue-400 hover:underline"
-                  >
-                    <div className="flex items-center justify-center gap-2">
-
-                    Demo Link<ArrowUpRightSquare/>
-                    </div>
-                  </Link>
-                </div>
-                <div>
-                  <Link
-                    href={item.github}
-                    className="hover:text-green-400 hover:underline"
-                  >
-                    <div className="flex gap-2 ">
-
-                    Github Link<GithubIcon/>
-                    </div>
-                  </Link>
+          <div className="md:flex flex-row mb-10 " key={item.id}>
+            <div className="md:flex  flex-row border border-separate rounded-xl px-4 shadow-lg  ">
+              <div className="md:flex-grow space-y-10 mb-8 mt-8 md:ml-4  w-full ">
+                <Image
+                  src={item.image}
+                  width={500}
+                  height={500}
+                  alt={item.name}
+                  className="rounded-xl hover:scale-125 transition-all duration-500  space-y-10 gap-10  "
+                />
+              </div>
+              <div className="md:flex-grow items-center justify-center mt-8 ml-4 w-full  ">
+                <h1 className="text-purple-600 font-semibold items-center ml-7 text-3xl ">
+                  {item.name}
+                </h1>
+                <h3 className="ml-7">{item.description}</h3>
+                <div className="ml-7 ">
+                  <div className="flex items-center mb-1 mt-1 ">
+                    <Link
+                      href={item.demolink}
+                      className="hover:text-blue-400 hover:underline"
+                    >
+                      <div className="flex items-center justify-center gap-2">
+                        Demo Link
+                        <ArrowUpRightSquare />
+                      </div>
+                    </Link>
+                  </div>
+                  <div>
+                    <Link
+                      href={item.github}
+                      className="hover:text-green-400 hover:underline"
+                    >
+                      <div className="flex gap-2 ">
+                        Github Link
+                        <GithubIcon />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
               <hr className="block md:hidden mt-3 " />
