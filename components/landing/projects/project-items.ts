@@ -9,6 +9,7 @@ export const projectitems = [
       "An E-Commerce App built with google authentication where users can add and remove items from their shopping carts ",
     demolink: "https://shlipkart-shivam-shahis-projects.vercel.app/",
     github: "https://github.com/shivamshahi07/Shlipkart",
+    skills:["Typescript","Tailwind CSS","Next Js","Prisma","MongoDB"]
   },
   {
     id: 2,
@@ -17,6 +18,7 @@ export const projectitems = [
     description: "The goal of this project is to design and develop a personal portfolio website that effectively highlights my skills, projects, and professional experience. ",
     demolink: "https://shivamshahi.vercel.app",
     github: "https://github.com/shivamshahi07/Portfolio",
+    skills:["Typescript","Tailwind CSS","Next Js"]
   },
   // {
   //   id: 3,
