@@ -10,9 +10,9 @@ const Projects = () => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["0 1", "1.33 1"],
+    offset: ["0 1", "1.25 1"],
   });
-  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
+  const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
 
   return (
@@ -26,11 +26,15 @@ const Projects = () => {
 
       {projectitems.map((item) => {
         return (
-          <motion.div className="md:flex flex-row mb-10 " key={item.id}ref={ref}
-          style={{
-            scale: scaleProgess,
-            opacity: opacityProgess,
-          }}>
+          <motion.div
+            className="md:flex flex-row mb-10 "
+            key={item.id}
+            ref={ref}
+            style={{
+              scale: scaleProgess,
+              opacity: opacityProgess,
+            }}
+          >
             <div className="md:flex  flex-row border border-separate rounded-xl px-4 shadow-lg  ">
               <div className="md:flex-grow space-y-10 mb-8 mt-8 md:ml-4  w-full ">
                 <Image
