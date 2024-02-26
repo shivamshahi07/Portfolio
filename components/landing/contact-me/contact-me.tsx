@@ -13,6 +13,7 @@ import {
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { sendEmail } from "@/actions/sendEmail";
+import SubmitBtn from "./submit-btn";
 
 const ContactMe = () => {
   
@@ -82,7 +83,7 @@ const ContactMe = () => {
                 </div>
               </div>
               <DialogFooter>
-                <Button type="submit">Send Mail</Button>
+                <SubmitBtn />
               </DialogFooter>
             </form>
           </DialogContent>
