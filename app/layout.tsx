@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/landing/navbar/navbar";
 import { cn } from "@/lib/utils";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,10 @@ export default function RootLayout({
           // forcedTheme="dark"
         >
           <Navbar />
+          
+          <Toaster position="top-right"/>
           <main className="pt-36 pb-20">{children}</main>
+          
         </ThemeProvider>
       </body>
     </html>

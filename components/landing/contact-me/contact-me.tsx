@@ -14,9 +14,9 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
+import toast from "react-hot-toast";
 
 const ContactMe = () => {
-  
   return (
     <main className="" id="about-me">
       <div>
@@ -31,8 +31,15 @@ const ContactMe = () => {
           </DialogTrigger>
           <DialogContent className="sm:max-w-[425px]">
             <form
-              action={async (FormData) => {
-                await sendEmail(FormData);
+              action={async (formData) => {
+                const { data, error } = await sendEmail(formData);
+      
+                if (error) {
+                  toast.error(error);
+                  return;
+                }
+      
+                toast.success("Email sent successfully!");
               }}
             >
               <DialogHeader>
