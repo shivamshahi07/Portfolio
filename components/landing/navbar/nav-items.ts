@@ -7,7 +7,7 @@ export const navItems = [
   {
     id: 2,
     name: "About",
-    source: "#about-me",
+    source: "#about",
   },
   {
     id: 3,

@@ -11,7 +11,7 @@ const AboutMe = () => {
     <main className="">
       <h1
         className=" w-full flex flex-col gap-y-2 items-center justify-center px-4 md:px-36 lg:px-48 mt-20  scroll-mt-20 text-3xl md:text-4xl font-semibold mb-4 md:mb-4"
-        id="about-me"
+        id="about"
       >
         About Me🧑🏻‍🔧
       </h1>
