@@ -21,7 +21,7 @@ const ContactMe = () => {
           <DialogTrigger asChild>
             <Button
               variant="outline"
-              className="bg-gradient-to-r from-blue-600 to-indigo-800 text-neutral-100 font-semibold"
+              className="bg-gradient-to-r from-blue-600 to-indigo-800 text-neutral-100 hover:text-gray-300 font-semibold"
             >
               Contact Me
             </Button>
