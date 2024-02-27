@@ -35,7 +35,7 @@ const AboutMe = () => {
             Beyond coding, you&rsquo;ll find me listening to{" "}
             <Link
               href={"https://open.spotify.com/user/b4p96ia2c1r8gjil2h2rqo7wi"}
-              className="text-green-400 underline-offset-1"
+              className="text-green-400 underline-offset-1 hover:underline"
             >
               music🎵
             </Link>{" "}
