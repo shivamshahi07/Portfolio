@@ -40,7 +40,7 @@ const LandingPage = () => {
     <main className="max-w-screen-xl px-8 ">
       <Background />
       <div className="">
-        <h1 className="text-3xl md:text-4xl font-semibold mb-3 md:mb-4" >
+        <h1 className="text-5xl md:text-5xl font-semibold mb-6 md:mb-6">
           👋🏼 Hey, I&#39;m{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
             Shivam!
@@ -50,7 +50,7 @@ const LandingPage = () => {
       </div>
       <TextGenerateEffect
         words="Building seamless web solutions"
-        className="max-w-xl text-lg md:text-xl mb-4 md:mb-6"
+        className="max-w-xl text-xl md:text-2xl mb-6 md:mb-8"
       />
       {/* <p className="">
         lorem ipsum dipsum lorem ipsum dipsum lorem ipsum dipsum lorem ipsum
@@ -59,7 +59,7 @@ const LandingPage = () => {
       </p> */}
       <motion.p
         className={cn(
-          "text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-3 md:mb-6",
+          "text-xl text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-3 md:mb-6",
           poppins.className
         )}
         initial={{ opacity: 0 }}
@@ -83,7 +83,7 @@ const LandingPage = () => {
       </motion.p>
       <motion.p
         className={cn(
-          "text-lg text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-16",
+          "text-xl text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-16",
           poppins.className
         )}
         initial={{ opacity: 0 }}
@@ -97,7 +97,7 @@ const LandingPage = () => {
 
       <ResumeButton />
       {/* scroll down button */}
-      <ChevronsDown className="animate-bounce  w-full flex flex-col gap-y-2 items-center justify-center px-4 md:px-36 lg:px-48  scroll-mt-10 text-3xl md:text-4xl font-semibold mb-16 md:mb-4 " />
+      <ChevronsDown className="animate-bounce  w-full flex flex-col gap-y-2 items-center justify-center px-4 md:px-36 lg:px-48  scroll-mt-10 text-4xl md:text-5xl font-semibold mb-16 md:mb-4 " />
 
       {/* About me section  */}
       <AboutMe />
@@ -109,7 +109,6 @@ const LandingPage = () => {
       <Exp />
 
       {/* Contact Me Section */}
-     
     </main>
   );
 };

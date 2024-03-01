@@ -6,14 +6,14 @@ const ResumeButton = () => {
     <main className="">
       <div className="">
         <Button
-          className="group rounded-full hover:scale-110 transition-all bg-gradient-to-r from-blue-600 to-indigo-600 text-neutral-100 mb-32 "
+          className="group rounded-full hover:scale-110 transition-all text-xl bg-gradient-to-r from-blue-600 to-indigo-600 text-neutral-100 mb-32 "
           variant={"default"}
-          size={"lg"}
+          size={"xl"}
           asChild
         >
           <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             Resume
-            <HiDownload className="ml-1 opacity-60 group-hover:translate-y-[0.15rem] transition" />
+            <HiDownload className="ml-1 scale-150 opacity-80 group-hover:translate-y-[0.15rem] transition" />
           </a>
         </Button>
       </div>
