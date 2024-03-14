@@ -1,26 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# SHIVAM SHAHI's PORTFOLIO
 
-## Getting Started
+<img width="1466" alt="Screenshot 2024-03-14 at 4 03 08 PM" src="https://github.com/shivamshahi07/Portfolio/assets/49952404/018aabcd-7150-4ec6-b66a-03dc166a02a1">
 
-First, run the development server:
+Here is the Source Code for my personal portfolio website, built with [Next.JS](https://nextjs.org/) , [TypeScript](https://www.typescriptlang.org/) and [Tailwind](https://tailwindcss.com/) . This Project is a constant work in progress, if you find any bugs or issues in the website, be sure to create issues and open pull requests.
+Feel Free to Fork this Project and adapt the website according to your needs. Credit is appreciated.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features of Project
+1.  **Responsive Design**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+    The website is designed to be fully responsive and compatible with various devices and screen sizes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1.  **Project Showcase**
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+    Browse through the projects I've worked on, with detailed information about each project.
+    
+1.  **Contact Form**
 
-## Learn More
+    Reach out to me directly via the contact form provided on the website.
+    
+
+
+1.  **About Me Section**
+
+    Learn More about me and my hobbies
+
+## Getting this project up and running
+
+1.  **Fork or Clone**
+
+    Fork or clone this project from Github to get your copy of it.
+
+1.  **Installation**
+
+    This project uses the pnpm package manager. To get started, follow the [Getting Started Guide](https://docs.npmjs.com/getting-started)
+
+    Once this is installed you can run `npm install` in your project directory to install dependencies.
+
+    ```sh
+    cd Portfolio/
+    npm run dev
+    ```
+
+1.  **Start developing.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```sh
+    npm dev
+    ```
+
+1.  **Open the source code and start editing!**
+
+    Your site is now running at `http://localhost:3000`!
+
+    Open the `Portfolio` directory in your code editor of choice and edit `src/app/(user)/page.tsx`. Save your changes and the browser will update in real time!
+
+## Next.js
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -29,8 +64,23 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Third-Party Services used
+### Resend email 
+I have used the Resend Email web service to add the emailing functionality in the Contact Me section of the Website. This service enables me to receive emails from potential employers and other site visitors to contact me easily.
+**Get API key**
+Visit the Resend Email website here : [Resend Website](https://resend.com/docs/introduction) and generate an API key as shown 
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+<img width="509" alt="Screenshot 2024-03-14 at 4 38 34 PM" src="https://github.com/shivamshahi07/Portfolio/assets/49952404/0a8a6f59-b4e8-4ba8-8612-7f504d334fb4" >
+
+---
+
+
+**Environment Variables**
+```
+RESEND_API_KEY=<YOUR API KEY>
+```
+To setup the Resend API, make an `.env` file in the portfolio directory and paste the above code in there and replace `YOUR API KEY` with the api key you generated at the resend website.
+## 
+
