@@ -1,3 +1,4 @@
+import type { Viewport } from 'next'
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
@@ -19,7 +20,13 @@ export const metadata: Metadata = {
     },
   ],
 };
-
+ 
+export const viewport: Viewport = {
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: 'cyan' },
+    { media: '(prefers-color-scheme: dark)', color: 'black' },
+  ],
+}
 export default function RootLayout({
   children,
 }: Readonly<{
