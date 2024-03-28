@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="w-screen">
           <hr />
         </div>
-        <div className="mb-1 mt-4 ml-8 mr-8 flex items-center justify-between">
+        <div className="mb-1 mt-4 ml-8 mr-8 flex-col sm:flex-row flex space-y-4 sm:space-y-0   items-center sm:justify-between">
           <div className="text-sm text-gray-500 tracking-wide sm:text-center dark:text-neutral-500">
             © 2024 Shivam Shahi.All rights reserved.
           </div>
