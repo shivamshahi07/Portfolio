@@ -83,12 +83,12 @@ export default function Project({
                   </div>
                 </Link>
               </div>
-              <div className="rounded-full text-blue-300 mt-4 -ml-2 ">
+              <div className="rounded-full  text-white dark:text-blue-300  mt-4 -ml-2 ">
                 <div>
                   <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto ">
                     {skills.map((tag, key) => (
                       <li
-                        className=" px-3 py-1 text-[0.7rem] uppercase border tracking-wider  rounded-full "
+                        className=" px-3 py-1 text-[0.7rem] uppercase border dark:bg-transparent bg-black/40 tracking-wider  rounded-full "
                         key={id}
                       >
                         {tag}
