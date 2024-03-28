@@ -11,6 +11,7 @@ import Link from "next/link";
 import { Background } from "../ui/bg";
 import { ChevronsDown } from "lucide-react";
 import AboutMe from "./about/about-me";
+import Footer from "./footer/footer";
 
 const poppins = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -37,7 +38,10 @@ const LandingPage = () => {
     },
   ];
   return (
-    <main className="max-w-screen-xl px-8 ">
+    <main>
+
+
+    <div className="max-w-screen-xl px-8 ">
       <Background />
       <div className="">
         <h1 className="text-5xl md:text-5xl font-semibold mb-6 md:mb-6">
@@ -109,6 +113,7 @@ const LandingPage = () => {
       <Exp />
 
       {/* Contact Me Section */}
+    </div>
     </main>
   );
 };

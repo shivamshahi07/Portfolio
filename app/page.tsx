@@ -1,4 +1,5 @@
 // import AboutMe from "@/components/landing/about-me/about-me";
+import Footer from "@/components/landing/footer/footer";
 import LandingPage from "@/components/landing/landing-page";
 // import Projects from "@/components/landing/projects/projects";
 // import { SocialItems } from "@/components/ui/dropdown/social-items";
@@ -30,8 +31,12 @@ export default function Home() {
     },
   ];
   return (
-    <main className="md:max-w-screen-xl mx-auto px-4 scroll-mt-44 ">
+    <main>
+
+    <div className="md:max-w-screen-xl mx-auto px-4 scroll-mt-44 ">
       <LandingPage/>
+    </div>
+    <Footer/>
     </main>
   );
 }
