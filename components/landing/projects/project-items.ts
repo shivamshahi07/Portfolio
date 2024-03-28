@@ -10,7 +10,7 @@ export const projectitems = [
       "An E-Commerce App built with google authentication where users can add and remove items from their shopping carts ",
     demolink: "https://shlipkart-shivam-shahis-projects.vercel.app/",
     github: "https://github.com/shivamshahi07/Shlipkart",
-    skills: ["Typescript", "Tailwind CSS", "Next Js", "Prisma", "MongoDB"],
+    skills: ["Typescript", "Tailwind CSS", "Next Js", "Prisma", "MongoDB","Daisy UI"],
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const projectitems = [
       "Implemented the Landing Page for a website development agency for small business owners",
     demolink: "https://websmiths.vercel.app",
     github: "https://github.com/shivamshahi07/WebSmiths",
-    skills: ["Typescript", "Tailwind CSS", "Next Js"],
+    skills: ["Typescript", "Tailwind CSS", "Next Js","Framer Motion","Shadcn UI"],
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ export const projectitems = [
       "The goal of this project is to design and develop a personal portfolio website that effectively highlights my skills, projects, and professional experience.",
     demolink: "https://shivamshahi.vercel.app",
     github: "https://github.com/shivamshahi07/Portfolio",
-    skills: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    skills: ["React", "Next.js", "MongoDB", "Tailwind CSS", "Framer Motion","Typescript","Shadcn UI"],
   },
   // {
   //   id: 4,
