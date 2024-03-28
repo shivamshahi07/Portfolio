@@ -30,7 +30,7 @@ export const projectitems = [
       "The goal of this project is to design and develop a personal portfolio website that effectively highlights my skills, projects, and professional experience.",
     demolink: "https://shivamshahi.vercel.app",
     github: "https://github.com/shivamshahi07/Portfolio",
-    skills: ["Typescript", "Tailwind CSS", "Next Js"],
+    skills: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
   },
   // {
   //   id: 4,
@@ -40,4 +40,4 @@ export const projectitems = [
   //   demolink: "demo-link",
   //   github: "github-link",
   // },
-];
+] as const; 

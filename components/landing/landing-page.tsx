@@ -5,13 +5,14 @@ import { motion } from "framer-motion";
 import { Roboto } from "next/font/google";
 import ContactMe from "./contact-me/contact-me";
 import Exp from "./experience/experience";
-import Projects from "./projects/projects";
+import Project from "./projects/project";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { Background } from "../ui/bg";
 import { ChevronsDown } from "lucide-react";
 import AboutMe from "./about/about-me";
 import Footer from "./footer/footer";
+import Projects from "./projects/projects";
 
 const poppins = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -107,7 +108,7 @@ const LandingPage = () => {
       <AboutMe />
 
       {/* Projects section */}
-      <Projects />
+      <Projects/>
 
       {/* Experience Section */}
       <Exp />
