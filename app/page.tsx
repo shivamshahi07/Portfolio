@@ -36,7 +36,7 @@ export default function Home() {
     <div className="md:max-w-screen-xl mx-auto px-4 scroll-mt-44 ">
       <LandingPage/>
     </div>
-    <Footer/>
+    
     </main>
   );
 }

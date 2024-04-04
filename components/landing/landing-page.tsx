@@ -13,6 +13,7 @@ import { ChevronsDown } from "lucide-react";
 import AboutMe from "./about/about-me";
 import Footer from "./footer/footer";
 import Projects from "./projects/projects";
+import Skills from "./skills/skills";
 
 const poppins = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -106,6 +107,7 @@ const LandingPage = () => {
 
       {/* About me section  */}
       <AboutMe />
+      <Skills />
 
       {/* Projects section */}
       <Projects/>
