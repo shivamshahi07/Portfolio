@@ -33,12 +33,12 @@ const ContactMe = () => {
             <form
               action={async (formData) => {
                 const { data, error } = await sendEmail(formData);
-      
+
                 if (error) {
                   toast.error(error);
                   return;
                 }
-      
+
                 toast.success("Email sent successfully!");
               }}
             >
