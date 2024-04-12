@@ -32,7 +32,7 @@ export const sendEmail = async (formData: FormData) => {
       reply_to: senderEmail,
       react: React.createElement(ContactFormEmail, {
         message: message as string,
-        senderEmail: senderEmail as string ,
+        senderEmail: senderEmail as string,
       }),
     });
   } catch (error: unknown) {
