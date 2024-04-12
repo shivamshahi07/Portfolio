@@ -1,9 +1,7 @@
 import {
   BiLogoGithub,
   BiLogoInstagram,
-  // BiLogoFacebookSquare,
   BiLogoGmail,
-  // BiLogoTelegram,
   BiLogoTwitter,
   BiLogoLinkedin,
 } from "react-icons/bi";

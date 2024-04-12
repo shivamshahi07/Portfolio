@@ -1,13 +1,4 @@
 import {
-  BiLogoGithub,
-  BiLogoInstagram,
-  // BiLogoFacebookSquare,
-  BiLogoGmail,
-  // BiLogoTelegram,
-  BiLogoTwitter,
-  BiLogoLinkedin,
-} from "react-icons/bi";
-import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
@@ -28,7 +19,8 @@ const SocialsDropdown = () => {
             size="default"
             className="hover:no-underline hover:text-blue-500 group"
           >
-            Socials <ChevronDown className="h-4 w-4 ml-1 group-hover:translate-y-[0.15rem] transition" />
+            Socials{" "}
+            <ChevronDown className="h-4 w-4 ml-1 group-hover:translate-y-[0.15rem] transition" />
           </Button>
         </DropdownMenuTrigger>
         {/* //mapping starts from here  */}
