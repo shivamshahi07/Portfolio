@@ -1,4 +1,4 @@
-import type { Viewport } from 'next'
+import type { Viewport } from "next";
 import type { Metadata } from "next";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Inter } from "next/font/google";
@@ -6,8 +6,8 @@ import "./globals.css";
 import Navbar from "@/components/landing/navbar/navbar";
 import { cn } from "@/lib/utils";
 import { Toaster } from "react-hot-toast";
-import Footer from '@/components/landing/footer/footer';
-import BackToTop from '@/components/back-to-top';
+import Footer from "@/components/landing/footer/footer";
+import BackToTop from "@/components/back-to-top";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,13 +22,13 @@ export const metadata: Metadata = {
     },
   ],
 };
- 
+
 export const viewport: Viewport = {
   themeColor: [
-    { media: '(prefers-color-scheme: light)', color: 'cyan' },
-    { media: '(prefers-color-scheme: dark)', color: 'black' },
+    { media: "(prefers-color-scheme: light)", color: "cyan" },
+    { media: "(prefers-color-scheme: dark)", color: "black" },
   ],
-}
+};
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -42,15 +42,12 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-          // forcedTheme="dark"
         >
           <Navbar />
-          
-          <Toaster position="top-right"/>
+          <Toaster position="top-right" />
           <main className="pt-36 pb-20">{children}</main>
           <BackToTop />
-          <Footer/>
-          
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
