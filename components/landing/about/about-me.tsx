@@ -1,9 +1,4 @@
-// import { cn } from "@/lib/utils";
-// import { MotionConfig } from "framer-motion";
-// import Image from "next/image";
 import Link from "next/link";
-
-// import { TracingBeam } from "@/components/ui/tracing-beam";
 import Shivam from "../shivam_avatar";
 
 const AboutMe = () => {
@@ -45,13 +40,6 @@ const AboutMe = () => {
         </div>
         <div className="flex-grow mt-10  ">
           <Shivam onDesktop={true} />
-          {/* <Image
-            src={img}
-            alt="Yep! This is Me!"
-            width={360}
-            height={420}
-            className="sm:flex-row rounded-lg shadow-lg hover:scale-105 hover:-rotate-6 transition-all duration-400"
-          /> */}
         </div>
       </div>
       <Shivam onDesktop={false} />
