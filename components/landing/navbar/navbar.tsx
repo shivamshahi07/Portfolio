@@ -20,7 +20,7 @@ export const Navbar = () => {
                 size={"sm"}
                 asChild
               >
-                <Link href={item.source} >{item.name}</Link>
+                <Link href={item.source}>{item.name}</Link>
               </Button>
             );
           })}
@@ -28,7 +28,7 @@ export const Navbar = () => {
         </div>
 
         <div className="flex items-center justify-between sm:justify-normal w-full sm:w-auto space-x-4">
-          <ContactMe/>
+          <ContactMe />
 
           <div className="flex items-center space-x-2">
             <ModeToggle />

@@ -12,9 +12,7 @@ import {
 } from "@/components/ui/drawer";
 import { MenuIcon } from "lucide-react";
 import Link from "next/link";
-import { navItems } from "./nav-items";
 import { SocialItems } from "../../ui/dropdown/social-items";
-// import { link } from "fs";
 
 export function NavigationMenu() {
   return (
@@ -38,21 +36,6 @@ export function NavigationMenu() {
 
           <div className="p-4 pb-16">
             <div className="flex flex-col items-center justify-center space-y-2 text-lg">
-              {/* {navItems.map((item) => {
-                return (
-                  <Button
-                    key={item.id}
-                    className="space-x-1 hover:no-underline hover:text-blue-500"
-                    variant={"link"}
-                    size={"lg"}
-                    asChild
-                  >
-                    <DrawerClose asChild>
-                      <Link href={item.source}>{item.name}</Link>
-                    </DrawerClose>
-                  </Button>
-                );
-              })} */}
               <div>
                 {SocialItems.map((items) => {
                   return (
