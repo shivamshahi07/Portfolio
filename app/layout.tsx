@@ -7,6 +7,7 @@ import Navbar from "@/components/landing/navbar/navbar";
 import { cn } from "@/lib/utils";
 import { Toaster } from "react-hot-toast";
 import Footer from '@/components/landing/footer/footer';
+import BackToTop from '@/components/back-to-top';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           
           <Toaster position="top-right"/>
           <main className="pt-36 pb-20">{children}</main>
+          <BackToTop />
           <Footer/>
           
         </ThemeProvider>
