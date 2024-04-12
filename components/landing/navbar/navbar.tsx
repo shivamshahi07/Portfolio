@@ -5,7 +5,6 @@ import { navItems } from "./nav-items";
 import SocialsDropdown from "../../ui/dropdown/socials-dropdown";
 import { NavigationMenu } from "./nav-menu";
 import ContactMe from "../contact-me/contact-me";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 
 export const Navbar = () => {
   return (
