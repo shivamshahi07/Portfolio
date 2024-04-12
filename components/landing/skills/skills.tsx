@@ -15,7 +15,6 @@ import pnpmIcon from "@/public/images/skills/pnpm.png";
 import viteIcon from "@/public/images/skills/vite.png";
 import prettierIcon from "@/public/images/skills/prettier.png";
 import nodejsIcon from "@/public/images/skills/nodejs.png";
-import nestjsIcon from "@/public/images/skills/nest-js.png";
 import expressjsIcon from "@/public/images/skills/express-js.png";
 import prismaIcon from "@/public/images/skills/prisma.png";
 import postgresIcon from "@/public/images/skills/postgres.png";
@@ -23,7 +22,6 @@ import dockerIcon from "@/public/images/skills/docker.png";
 import gitIcon from "@/public/images/skills/git.png";
 import ubuntuIcon from "@/public/images/skills/ubuntu.svg";
 import vscodeIcon from "@/public/images/skills/vscode.png";
-import arcIcon from "@/public/images/skills/arc.png";
 import warpIcon from "@/public/images/skills/warp.webp";
 import postmanIcon from "@/public/images/skills/postman.svg";
 import davinciResolveIcon from "@/public/images/skills/davinci-resolve.png";
@@ -166,10 +164,6 @@ export default function Skills() {
           icon: vscodeIcon,
         },
         {
-          name: "Arc",
-          icon: arcIcon,
-        },
-        {
           name: "Warp Terminal",
           icon: warpIcon,
         },
@@ -222,13 +216,7 @@ export default function Skills() {
   );
 }
 
-function SkillCard({
-  icon,
-  name,
-}: {
-  icon: string;
-  name: string;
-}) {
+function SkillCard({ icon, name }: { icon: string; name: string }) {
   return (
     <div className="group rounded-xl border-none p-5 text-center shadow-none transition-all duration-200 ease-linear hover:scale-110 hover:drop-shadow-xl">
       <div className="flex flex-col items-center gap-2">
