@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { projectitems } from "./project-items";
-import shlipkart from "@/public/images/shlipkart.png";
 import { ArrowUpRightSquare, GithubIcon } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
@@ -25,16 +24,6 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
-    // const Project = () => {
-    //   const ref = useRef<HTMLDivElement>(null);
-    //   const { scrollYProgress } = useScroll({
-    //     target: ref,
-    //     offset: ["0 1", "1.25 1"],
-    //   });
-    //   const scaleProgess = useTransform(scrollYProgress, [0, 1], [0.9, 1]);
-    //   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
-
-    //   return (
     <main className="">
       <motion.div
         className="md:flex flex-row mb-10 "
@@ -105,5 +94,3 @@ export default function Project({
     </main>
   );
 }
-
-// export default Project;
