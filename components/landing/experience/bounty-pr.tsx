@@ -16,7 +16,7 @@ const BountyAvatar = ({ onDesktop = true }: { onDesktop?: boolean }) => {
     >
       <Image
         src={bounty}
-        alt={"Bounty pr"}
+        alt={"Bounty PULL REQUEST"}
         className="rounded-full shadow-xl hover:scale-150 transition-all duration-300"
         width={onDesktop ? 400 : 400}
         height={onDesktop ? 400 : 400}

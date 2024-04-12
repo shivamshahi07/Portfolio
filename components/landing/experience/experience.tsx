@@ -1,7 +1,6 @@
 import first from "@/public/images/first-pr.png";
 import Image from "next/image";
 import Link from "next/link";
-import BountyAvatar from "@/components/landing/experience/bounty-pr";
 import bounty from "@/public/images/bounty-pr.png";
 const Exp = () => {
   return (
@@ -52,14 +51,14 @@ const Exp = () => {
                   PR got merged.
                 </span>{" "}
                 That easily Comes up into my top ten happiest moments
-                </li>
-                <Image
-                  src={first}
-                  width={1400}
-                  height={250}
-                  alt="first PR"
-                  className="rounded-lg  shadow-lg border-4 border-gray-500 "
-                />
+              </li>
+              <Image
+                src={first}
+                width={1400}
+                height={250}
+                alt="first PR"
+                className="rounded-lg  shadow-lg border-4 border-gray-500 "
+              />
             </div>
             <div className="flex-col my-3  ">
               <li className="w-full text-justify mb-4 ">
@@ -78,20 +77,9 @@ const Exp = () => {
                 height={250}
                 width={1000}
               />
-              {/* <BountyAvatar onDesktop={true} /> */}
-
-              {/* <Image
-                src={bounty}
-                width={500}
-                height={360}
-                alt="Bounty PR"
-                className="flex-grow rounded-xl hover:scale-125 transition-all duration-400 shadow-lg  "
-              /> */}
             </div>
           </div>
-          <div className="mt-12">
-            {/* <BountyAvatar onDesktop={false} /> */}
-          </div>
+          <div className="mt-12"></div>
         </div>
       </div>
     </main>
