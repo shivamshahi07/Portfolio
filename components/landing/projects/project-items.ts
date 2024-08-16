@@ -2,6 +2,7 @@ import img from "@/public/images/shlipkart.png";
 import portfolio from "@/public/images/portfolio.png";
 import web from "@/public/images/web.png";
 import pre from "@/public/images/pre.png";
+import ai from "@/public/images/ai.png"
 export const projectitems = [
   {
     id: 1,
@@ -23,6 +24,25 @@ export const projectitems = [
   },
   {
     id: 2,
+    name: "Ai Symphony",
+    image: ai,
+    description:
+      "A platform which provides tools like image generation , summarization and more using open source ai models ",
+    demolink: "https://aisymphony.vercel.app/",
+    github: "https://github.com/shivamshahi07/aisymphony",
+    skills: [
+      "Typescript",
+      "Tailwind CSS",
+      "Next Js",
+      "Cloudflare Workers",
+      "Hono.js",
+      "Zod",
+      "Bun",
+      "Shadcn UI"
+    ],
+  },
+  {
+    id: 3,
     name: "WebSmiths Landing Page",
     image: web,
     description:
@@ -39,7 +59,7 @@ export const projectitems = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: " Portfolio Website ",
     image: portfolio,
     description:
@@ -58,7 +78,7 @@ export const projectitems = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     name: "Prototype YC landing page for Preloop",
     image: pre,
     description: "This website was my attempt to make a protoype marketing page for a recently funded(w24) YC startup, Preloop",
