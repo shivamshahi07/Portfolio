@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
@@ -8,6 +9,7 @@ import { ArrowRight, Award, BookOpen, Briefcase, Calendar, MapPin } from 'lucide
 
 import first from "@/public/images/first-pr.png";
 import bounty from "@/public/images/bounty-pr.png";
+//@ts-ignore
 
 const ExperienceCard = ({ title, company, date, location, description, isRemote }) => (
   <Card className="mb-6 bg-transparent">
@@ -80,7 +82,7 @@ const Exp = () => {
       
       <div className="space-y-8 text-neutral-800 dark:text-neutral-300">
         <p className="text-lg text-center">
-          My journey has been nothing short of an adventure. Here's a glimpse of my development journey:
+          My journey has been nothing short of an adventure. Here&apos;s a glimpse of my development journey:
         </p>
 
         <h3 className="text-2xl font-semibold text-blue-600 dark:text-indigo-400 mt-12 mb-6">
@@ -89,7 +91,7 @@ const Exp = () => {
 
         <div className="space-y-6">
           <p>
-            My journey began with a deep dive into the world of open source. Unlike many, I was guided away from making simple README.md contributions, thanks to my college roommate's advice – a decision I'm deeply grateful for.
+            My journey began with a deep dive into the world of open source. Unlike many, I was guided away from making simple README.md contributions, thanks to my college roommate&apos;s advice – a decision I&apos;m deeply grateful for.
           </p>
           
           <p>
