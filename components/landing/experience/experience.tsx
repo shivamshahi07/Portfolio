@@ -75,9 +75,9 @@ const Exp = () => {
   ];
 
   return (
-    <main className="container mx-auto px-4 py-8">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-teal-600 dark:text-teal-400">
-        My Journey
+    <main className="container mx-auto px-4 py-8 scroll-mt-28 " id="exp"   >
+      <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-teal-600 dark:text-teal-400 " >
+        My Journey 🚀
       </h2>
       
       <div className="space-y-8 text-neutral-800 dark:text-neutral-300">
