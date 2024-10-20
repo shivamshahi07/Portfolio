@@ -2,9 +2,9 @@ import { createClient } from 'contentful';
 
 const client = createClient({
     //@ts-ignore
-  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  space: process.env.CONTENTFUL_SPACE_ID,
   //@ts-ignore
-  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 });
 
 export async function fetchBlogPosts() {
