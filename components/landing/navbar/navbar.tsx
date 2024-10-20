@@ -25,6 +25,16 @@ export const Navbar = () => {
             );
           })}
           <SocialsDropdown />
+          <Link href={"/blogs"}>
+            <Button
+              className="space-x-1 hover:no-underline hover:text-blue-500"
+              variant={"link"}
+              size={"sm"}
+              asChild
+            >
+              <span className="text-sm font-medium">Blog</span>
+            </Button>
+          </Link>
         </div>
 
         <div className="flex items-center justify-between sm:justify-normal w-full sm:w-auto space-x-4">
