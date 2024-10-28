@@ -1,29 +1,33 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { fetchBlogPosts } from "@/lib/contentful";
 import { useRouter } from "next/navigation";
+import { PasswordPrompt } from "@/components/ui/password-modal";
+
 interface BlogPost {
-    title: string;
-    slug: string;
-    body: any; // You can type this further depending on the structure of the body
-    publishedDate: string;
-    blogType: string;
-    password?: string;
-  }
+  title: string;
+  slug: string;
+  body: any;
+  publishedDate: string;
+  blogType: string;
+  password?: string;
+}
 
 export default function Blog() {
-    const [posts, setPosts] = useState<BlogPost[]>([]);
+  const [posts, setPosts] = useState<BlogPost[]>([]);
   const [loading, setLoading] = useState(true);
-  const router = useRouter(); // Used for navigation
+  const [error, setError] = useState<string | null>(null);
+  const [selectedPost, setSelectedPost] = useState<BlogPost | null>(null);
+  const [showPasswordPrompt, setShowPasswordPrompt] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const loadBlogPosts = async () => {
       try {
-        const fetchedPosts = await fetchBlogPosts();
-        //@ts-ignore
+        const response = await fetch('/api/posts');
+        if (!response.ok) throw new Error('Failed to fetch posts');
+        const fetchedPosts = await response.json();
         setPosts(fetchedPosts);
-        console.log("Fetched blog posts:", fetchedPosts);
         setLoading(false);
       } catch (error) {
         console.error("Error fetching blog posts:", error);
@@ -33,24 +37,34 @@ export default function Blog() {
 
     loadBlogPosts();
   }, []);
-  //@ts-ignore
-  const handleBlogClick = (post) => {
+
+  const handleBlogClick = (post: BlogPost) => {
     if (post.blogType === "personal") {
-      const enteredPassword = prompt("Enter the password for this blog:");
-      if (enteredPassword === post.password) {
-        // Password is correct, navigate to the blog post
-        router.push(`/blogs/${post.slug}`);
-      } else {
-        alert("Incorrect password");
-      }
+      setSelectedPost(post);
+      setShowPasswordPrompt(true);
     } else {
-      // For professional blogs, just navigate directly
       router.push(`/blogs/${post.slug}`);
+    }
+  };
+  const handlePasswordSubmit = (password: string) => {
+    if (selectedPost && password === selectedPost.password) {
+      setShowPasswordPrompt(false);
+      router.push(`/blogs/${selectedPost.slug}`);
+    } else {
+      //TODO: add a shake animation or error message here
+      alert("Incorrect password");
     }
   };
 
   if (loading) {
     return <div className="h-screen">Loading blog posts...</div>;
+  }
+  if (error) {
+    return <div className="h-screen text-red-500">Error: {error}</div>;
+  }
+
+  if (!posts.length) {
+    return <div className="h-screen">No blog posts found.</div>;
   }
 
   return (
@@ -58,7 +72,6 @@ export default function Blog() {
       <h1 className="text-4xl font-bold mb-8">Blog</h1>
       <ul>
         {posts.map((post) => (
-          //@ts-ignore
           <li key={post.slug} className="mb-6">
             <button
               onClick={() => handleBlogClick(post)}
@@ -69,13 +82,21 @@ export default function Blog() {
             <p className="text-sm text-gray-500">
               {new Date(post.publishedDate).toDateString()}
             </p>
-            {/* Show only the first line of the body */}
             <p className="text-gray-700 mt-2">
               {post.body.content[0].content[0].value.split("\n")[0]}...
             </p>
           </li>
         ))}
       </ul>
+      <PasswordPrompt
+        isOpen={showPasswordPrompt}
+        onClose={() => {
+          setShowPasswordPrompt(false);
+          setSelectedPost(null);
+        }}
+        onSubmit={handlePasswordSubmit}
+        title={selectedPost?.title || ''}
+      />
     </div>
   );
 }
