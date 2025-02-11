@@ -41,7 +41,7 @@ export default function Project({
               width={500}
               height={500}
               alt={name}
-              className="rounded-xl hover:scale-125 transition-all duration-500  space-y-10 gap-10  "
+              className="rounded-xl hover:ring-4 hover:ring-blue-500 transition-all duration-500  space-y-10 gap-10  "
             />
           </div>
           <div className="md:flex-grow items-center justify-center mt-8 ml-4 w-full  ">

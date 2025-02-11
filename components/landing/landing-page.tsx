@@ -63,7 +63,7 @@ const LandingPage = () => {
         </motion.p>
         <motion.p
           className={cn(
-            "text-xl text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-16",
+            "text-xl text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-3 md:mb-8",
             poppins.className
           )}
           initial={{ opacity: 0 }}
@@ -73,6 +73,19 @@ const LandingPage = () => {
           I&#39;m currently an undergraduate, pursuing Computer Science majors
           with Specialization in Artificial Intelligence and Machine Learning
           from New Delhi, India.
+
+        </motion.p>
+        <motion.p
+          className={cn(
+            "text-xl text-neutral-800 dark:text-neutral-300 md:max-w-screen-md mb-8 md:mb-8",
+            poppins.className
+          )}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ ease: "easeOut", duration: 2 }}
+        >
+          I&#39;m also working as a Full Stack Developer at CognoTools.
+
         </motion.p>
 
         <ResumeButton />

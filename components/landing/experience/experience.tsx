@@ -39,6 +39,19 @@ const ExperienceCard = ({ title, company, date, location, description, isRemote 
 const Exp = () => {
   const experiences = [
     {
+      title: "Full Stack Developer",
+      company: "CognoTools",
+      date: "October 2024 - Present",
+      location: "Bengaluru, IND",
+      isRemote: true,
+      description: [
+        "Working with Google engineers to Implement a microphone-based UI for an AI resume builder, increasing engagement by 40%",
+        "Working extensively with LangChain and LangGraph to build AI agents, leading to a 30% efficiency improvement in response generation and API call processing",
+        "Managing virtual machines on Microsoft Azure, improving workflow productivity by 20%.",
+        "Resolving merge conflicts and streamlined the development process, decreasing project delivery time by 30%" 
+      ]
+    },
+    {
       title: " Software Engineer Intern",
       company: "Smertix",
       date: "April 2024 - Present",
